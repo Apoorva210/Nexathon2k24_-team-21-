@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Profile</title>
+<link rel="stylesheet" type="text/css" href="user.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="profile-header">
+    <img src="user-icon.png" class="profile-image" alt="User Icon">
+    <h1 class="profile-name">John Doe</h1>
+  </div>
+  <div class="profile-section">
+    <h2>Profile Information</h2>
+    <div class="profile-info">
+      <div class="info-item">
+        <span class="info-label">Gender:</span>
+        <span class="info-value">Male</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Joined Date:</span>
+        <span class="info-value">March 1, 2023</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Language:</span>
+        <span class="info-value">English</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Birthdate:</span>
+        <span class="info-value">January 1, 1990</span>
+      </div>
+    </div>
+  </div>
+  <div class="button-container">
+    <button class="deactivate-button">Deactivate Account</button>
+    <button class="logout-button">Log Out</button>
+  </div>
+  <div class="settings-panel">
+    <h2>Account Settings</h2>
+    <form id="accountSettingsForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="John Doe">
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <label for="language">Language:</label>
+      <input type="text" id="language" name="language" value="English">
+      
+      <label for="birthdate">Birthdate:</label>
+      <input type="text" id="birthdate" name="birthdate" value="January 1, 1990">
+      
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>
